@@ -66,31 +66,31 @@ VALUES(7, 'blues');
 -- Albums
 
 INSERT INTO album_list
-VALUES(1, 'Black Album', '1991-08-14');
+VALUES(1, 'Black Album', '1991');
 
 INSERT INTO album_list
-VALUES(2, 'American IV', '2002-11-5');
+VALUES(2, 'American IV', '2002');
 
 INSERT INTO album_list
-VALUES(3, 'Are You Experienced', '1967-05-12');
+VALUES(3, 'Are You Experienced', '1967');
 
 INSERT INTO album_list
-VALUES(4, 'Senjutsu', '2021-09-03');
+VALUES(4, 'Senjutsu', '2021');
 
 INSERT INTO album_list
-VALUES(5, 'Invaders Must Die', '2018-02-23');
+VALUES(5, 'Invaders Must Die', '2018');
 
 INSERT INTO album_list
-VALUES(6, 'Highway to Hell', '1979-07-27');
+VALUES(6, 'Highway to Hell', '1979');
 
 INSERT INTO album_list
-VALUES(7, 'Dangerous Days', '2018-07-17');
+VALUES(7, 'Dangerous Days', '2018');
 
 INSERT INTO album_list
-VALUES(8, 'Trilogy', '2015-02-10');
+VALUES(8, 'Trilogy', '2015');
 
 INSERT INTO album_list
-VALUES(9, 'Corruptor', '2016-04-16');
+VALUES(9, 'Corruptor', '2016');
 
 
 -----------------------------------------------------------
@@ -142,34 +142,37 @@ values(14, '03:58' ,'Complete Domination', 7);
 INSERT INTO track_list
 values(15, '02:51' ,'Purple Haze', 3);
 
+INSERT INTO track_list 
+values(16, '04:24', 'The Day Is My Enemy', 5);
+
 
 -----------------------------------------------------------
 
 -- Collection 8
 
 INSERT INTO collection_list
-VALUES(1, 'BombasticMetal_1', '2018-09-10');
+VALUES(1, 'BombasticMetal_1', '2018');
 
 INSERT INTO collection_list
-VALUES(2, 'BombasticRock_1', '2019-07-12');
+VALUES(2, 'BombasticRock_1', '2019');
 
 INSERT INTO collection_list
-VALUES(3, 'BombasticElectro_1', '2020-12-01');
+VALUES(3, 'BombasticElectro_1', '2020');
 
 INSERT INTO collection_list
-VALUES(4, 'BombasticElectro_2', '2007-03-08');
+VALUES(4, 'BombasticElectro_2', '2007');
 
 INSERT INTO collection_list
-VALUES(5, 'BombasticSynthwave_1', '2009-04-27');
+VALUES(5, 'BombasticSynthwave_1', '2009');
 
 INSERT INTO collection_list
-VALUES(6, 'BombasticCountry_1', '2012-06-19');
+VALUES(6, 'BombasticCountry_1', '2012');
 
 INSERT INTO collection_list
-VALUES(7, 'BombasticMetal_2', '2017-10-22');
+VALUES(7, 'BombasticMetal_2', '2017');
 
 INSERT INTO collection_list
-VALUES(8, 'BombasticRock_2', '2016-11-17');
+VALUES(8, 'BombasticRock_2', '2016');
 
 
 -----------------------------------------------------------
@@ -260,53 +263,42 @@ values(16, 12, 6);
 
 -----------------------------------------------------------
 
---CollectionTrack
+--CollectionTrack REFER
 
 
 INSERT INTO collectiontrack
-values(1, 1, 1);
+VALUES
 
-INSERT INTO collectiontrack
-values(2, 2, 1);
+(1, 1, 1),
 
-INSERT INTO collectiontrack
-values(3, 3, 1);
+(2, 2, 1),
 
-INSERT INTO collectiontrack
-values(4, 4, 2);
+(3, 3, 1),
 
-INSERT INTO collectiontrack
-values(5, 5, 2);
+(4, 4, 2),
 
-INSERT INTO collectiontrack
-values(6, 6, 2);
+(5, 5, 2),
 
-INSERT INTO collectiontrack
-values(7, 7, 6);
+(6, 6, 2),
 
-INSERT INTO collectiontrack
-values(8, 8, 6);
+(7, 7, 6),
 
-INSERT INTO collectiontrack
-values(9, 9, 4);
+(8, 8, 6),
 
-INSERT INTO collectiontrack
-values(10, 10, 4);
+(9, 9, 4),
 
-INSERT INTO collectiontrack
-values(11, 11, 7);
+(10, 10, 4),
 
-INSERT INTO collectiontrack
-values(12, 12, 7);
+(11, 11, 7),
 
-INSERT INTO collectiontrack
-values(13, 13, 5);
+(12, 12, 7),
 
-INSERT INTO collectiontrack
-values(14, 14, 5);
+(13, 13, 5),
 
-INSERT INTO collectiontrack
-values(15, 15, 8);
+(14, 14, 5),
 
+(15, 15, 8),
+
+(16, 16, 4);
 
 

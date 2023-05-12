@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS collection_list(
 	collection_id SERIAL PRIMARY KEY,
 	collection_name varchar(60) NOT NULL,
-	release_date date NOT null
+	release_year integer NOT null
 
 	
 );
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS collection_list(
 CREATE TABLE IF NOT EXISTS album_list (
 	album_id SERIAL PRIMARY KEY,
 	album_name varchar(100) NOT NULL,
-	release_date date NOT NULL
+	release_year integer NOT NULL
 	
 
 );
