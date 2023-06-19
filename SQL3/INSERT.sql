@@ -92,58 +92,86 @@ VALUES(8, 'Trilogy', '2015');
 INSERT INTO album_list
 VALUES(9, 'Corruptor', '2016');
 
+----------------------------------------------------------
+
+-- Additional Albums
+
+INSERT INTO album_list 
+
+VALUES
+
+(10, 'additional_album1', '2019'),
+
+(11,'additional_album2', '2020');
+
 
 -----------------------------------------------------------
 
 -- Track 15
 
 INSERT INTO track_list
-values(1, '06:42', 'My Friend of Misery', 1);
+values(1, '00:06:42' ,'My Friend of Misery', 1);
 
 INSERT INTO track_list
-values(2, '05:28' ,'Sad But True', 1);
+values(2, '00:05:28' ,'Sad But True', 1);
 
 INSERT INTO track_list
-values(3, '05:31' ,'Enter Sandman', 1);
+values(3, '00:05:31' ,'Enter Sandman', 1);
 
 INSERT INTO track_list
-values(4, '03:41' ,'Highway To Hell', 6);
+values(4, '00:03:41' ,'Highway To Hell', 6);
 
 INSERT INTO track_list
-values(5, '04:26' ,'Touch To Much', 6);
+values(5, '00:04:26' ,'Touch To Much', 6);
 
 INSERT INTO track_list
-values(6, '05:59' ,'If You Want Blood (You’ve Got It)', 6);
+values(6, '00:05:59' ,'If You Want Blood (You’ve Got It)', 6);
 
 INSERT INTO track_list
-values(7, '04:02' ,'Hurt', 2);
+values(7, '00:04:02' ,'Hurt', 2);
 
 INSERT INTO track_list
-values(8, '04:26' ,'The Man Comes Around', 2);
+values(8, '00:04:26' ,'The Man Comes Around', 2);
 
 INSERT INTO track_list
-values(9, '02:59' ,'Invaders Must Die', 5);
+values(9, '00:02:59' ,'Invaders Must Die', 5);
 
 INSERT INTO track_list
-values(10, '03:19' ,'Omen', 5);
+values(10, '00:03:19' ,'Omen', 5);
 
 INSERT INTO track_list
-values(11, '11:19' ,'Hell On Earth', 4);
+values(11, '00:11:19' ,'Hell On Earth', 4);
 
 INSERT INTO track_list
-values(12, '09:31' ,'Lost in a Lost World', 4);
+values(12, '00:09:31' ,'Lost in a Lost World', 4);
 
 INSERT INTO track_list
-values(13, '04:49' ,'Future Club', 7);
+values(13, '00:04:49' ,'Future Club', 7);
 
 INSERT INTO track_list
-values(14, '03:58' ,'Complete Domination', 7);
+values(14, '00:03:58' ,'Complete Domination', 7);
 
 INSERT INTO track_list
-values(15, '02:51' ,'Purple Haze', 3);
+values(15, '00:02:51' ,'Purple Haze', 3);
 
 INSERT INTO track_list 
-values(16, '04:24', 'The Day Is My Enemy', 5);
+values(16, '00:04:24' ,'The Day Is My Enemy', 5);
+
+----------------------------------------------------------
+
+-- Addititonal Tracks
+
+INSERT INTO track_list
+
+VALUES
+
+(17, '00:02:27', 'Additional_track1', 10),
+
+(18, '00:07:19', 'Additional_track2', 10),
+
+(19, '00:04:33', 'Additional_track3', 11),
+
+(20, '00:05:10', 'Additional_track4', 11);
 
 
 -----------------------------------------------------------
