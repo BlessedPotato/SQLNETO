@@ -67,29 +67,47 @@
 
 --Количество треков, вошедших в альбомы 2019–2020 годов.
 	
-	SELECT count(track_name) FROM track_list tl
+	SELECT count(track_name) track_a FROM track_list tl
 	
-	JOIN album_list al ON tl.track_id = al.album_id
+	JOIN album_list al ON tl.album_id = al.album_id
 	
 	WHERE al.release_year BETWEEN 2019 AND 2020;
 	
 --Средняя продолжительность треков по каждому альбому.
 	
-	SELECT album_name, length FROM track_list tl 
-	
-	JOIN album_list al ON tl.track_id = al.album_id
-	
-	WHERE length = SELECT (avg(length))
+	SELECT album_name, AVG(length) FROM track_list tl
+
+	JOIN album_list al ON tl.album_id = al.album_id 
 	
 	GROUP BY al.album_name;
 
 --Все исполнители, которые не выпустили альбомы в 2020 году.
 	
-	SELECT author_name
+SELECT author_name FROM authoralbum aalb 
+
+JOIN author_list al ON aalb.author_id = al.author_id
+
+JOIN album_list alb ON aalb.album_id = alb.album_id
+
+WHERE alb.release_year != 2020;
 	
 --Названия сборников, в которых присутствует конкретный исполнитель (выберите его сами).
 	
-	
+SELECT cl.collection_name FROM collection_list cl
+
+JOIN collectiontrack ct ON ct.collection_id = cl.collection_id 
+
+JOIN track_list tl ON ct.track_id = tl.track_id 
+
+JOIN album_list alb ON tl.album_id = alb.album_id 
+
+JOIN authoralbum aalb ON aalb.album_id = alb.album_id 
+
+JOIN author_list al ON aalb.author_id = al.author_id 
+
+WHERE author_name = 'AC/DC'
+
+
 	
 	
 	

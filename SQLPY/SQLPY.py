@@ -26,7 +26,6 @@ def add_client(cur, first_name, last_name, email, phone=None):
 
 def add_phone(cur, client_id, phone=None):
     cur.execute("INSERT INTO phone(phone, client_id) VALUES (%s, %s)", (phone, client_id))
-    conn.commit()
 
 def change_client(cur, id, first_name=None, last_name=None, email=None, phone=None):
     client_data = {"first_name": first_name, "last_name": last_name, "email": email}
