@@ -235,6 +235,15 @@ INSERT INTO authoralbum
 values(9, 9, 12);
 
 
+
+--Additional AuthorAlbum
+
+INSERT INTO authoralbum
+VALUES
+
+(10, 10, 10),
+
+(11, 11, 12);
 -----------------------------------------------------------
 
 --AuthorGenre
@@ -328,5 +337,17 @@ VALUES
 (15, 15, 8),
 
 (16, 16, 4);
+
+
+INSERT INTO collectiontrack
+VALUES 
+
+(17, 17, 4),
+
+(18, 18, 7),
+
+(19, 19, 6),
+
+(20, 20, 8);
 
 

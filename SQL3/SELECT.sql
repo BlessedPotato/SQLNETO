@@ -17,7 +17,7 @@
 
 	SELECT length, track_name FROM track_list
 	
-	WHERE length >= '00:03:50';
+	WHERE length >= '00:03:30';
 
 --Названия сборников, вышедших в период с 2018 по 2020 год включительно.
 
@@ -35,21 +35,21 @@
 
 	SELECT track_name FROM track_list
 	
-	WHERE  track_name ILIKE '%my'
+	WHERE  track_name ILIKE '% my'
 	
-	OR track_name ILIKE 'my%'
-	
-	OR track_name ILIKE '%my%'
+	OR track_name ILIKE 'my %'
 	
 	OR track_name ILIKE '% my %'
+		
+	OR track_name ILIKE '% мой'
 	
-	OR track_name ILIKE '%мой'
-	
-	OR track_name ILIKE 'мой%'
-	
-	OR track_name ILIKE '%мой%'
-	
+	OR track_name ILIKE 'мой %'
+		
 	OR track_name ILIKE '% мой %'
+	
+	OR track_name ILIKE 'мой'
+	
+	OR track_name ILIKE 'my';
 	
 	
 
@@ -83,17 +83,25 @@
 
 --Все исполнители, которые не выпустили альбомы в 2020 году.
 	
-SELECT author_name FROM authoralbum aalb 
+SELECT author_name FROM author_list al
 
-JOIN author_list al ON aalb.author_id = al.author_id
+WHERE author_name NOT IN (
 
-JOIN album_list alb ON aalb.album_id = alb.album_id
+	SELECT author_name FROM author_list al
+	
+	JOIN authoralbum aalb ON aalb.author_id = al.author_id
+	
+	JOIN album_list alb ON aalb.album_id = alb.album_id
+	
+	WHERE release_year = 2020
 
-WHERE alb.release_year != 2020;
+);
+
+
 	
 --Названия сборников, в которых присутствует конкретный исполнитель (выберите его сами).
 	
-SELECT cl.collection_name FROM collection_list cl
+SELECT collection_name FROM collection_list cl
 
 JOIN collectiontrack ct ON ct.collection_id = cl.collection_id 
 
@@ -105,7 +113,7 @@ JOIN authoralbum aalb ON aalb.album_id = alb.album_id
 
 JOIN author_list al ON aalb.author_id = al.author_id 
 
-WHERE author_name = 'AC/DC'
+WHERE author_name = 'AC/DC';
 
 
 	
